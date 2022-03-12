@@ -1,4 +1,110 @@
 body {
+	background-color: #000000;
+	color: #B0B0B0;
 	padding: 0;
 	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+}
+
+nav img {
+	margin-left: 50px;
+}
+
+nav .menu {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: 50px;
+	list-style-type: none;
+}
+
+nav .menu li {
+	margin-right: 10px;
+}
+
+nav .menu a {
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #B0B0B0;
+	transition: all .5s;
+}
+
+nav .menu a:hover, nav .menu #curriculo:hover {
+	color: white;
+	border-color: white;
+}
+
+nav .menu #curriculo {
+	border: 2px solid #B0B0B0;
+}
+
+div.welcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.welcome .text {
+	margin-right: -15%;
+	display: grid;
+	width: 50%;
+}
+
+div.welcome h1 {
+	margin: 0;
+	background: linear-gradient(270deg, rgba(206, 206, 206, 0) 7.48%, #FFFFFF 102.56%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	line-height: 87%;
+	font-size: 8vw;
+	font-weight: 900;
+}
+
+div.welcome p {
+	max-width: 60%;
+	line-height: 172%;
+	margin-bottom: 20px;
+}
+
+div.welcome a {
+	margin-right: auto;
+	background-color: #FFF;
+	padding: 10px 40px;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div.welcome img {
+	width: 30%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+	nav .menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	div.welcome .text {
+		justify-items: center;
+		margin-right: 0;
+		width: 80%;
+	}
+
+	div.welcome a {
+		margin-right: 0;	}
+
+	div.welcome img {
+		display: none;
+	}
 }
