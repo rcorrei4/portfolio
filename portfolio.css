@@ -8,7 +8,15 @@ body {
 
 nav {
 	display: flex;
+	justify-content: center;
+}
+
+nav div {
+	width: 100%;
+	max-width: 1600px;
+	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	margin-top: 40px;
 }
 
@@ -19,7 +27,6 @@ nav img {
 nav .menu {
 	display: flex;
 	align-items: center;
-	margin-left: auto;
 	margin-right: 50px;
 	list-style-type: none;
 }
@@ -42,6 +49,10 @@ nav .menu a:hover, nav .menu #curriculo:hover {
 
 nav .menu #curriculo {
 	border: 2px solid #B0B0B0;
+}
+
+nav .menu-btn {
+	display: none;
 }
 
 div.welcome {
@@ -88,6 +99,42 @@ div.welcome img {
 	height: auto;
 }
 
+div.about {
+	width: 100%;
+	margin-top: 120px;
+	display: flex;
+	justify-content: center;
+}
+
+div.about h1 {
+	color: white;
+}
+
+div.about .about-div {
+	width: 85%;
+	max-width: 1600px;
+}
+
+div.about .content {
+	display: flex;
+	align-items: flex-start;
+}
+
+div.about .text {
+	margin-right: 5%;
+	line-height: 172%;
+}
+
+div.about .skills {
+	display: flex;
+	justify-content: space-around;
+}
+
+div.about .content img {
+	width: 30%;
+	height: auto;
+}
+
 @media screen and (max-width: 768px) {
 	nav .menu {
 		display: none;
@@ -107,6 +154,20 @@ div.welcome img {
 	nav .open-menu li {
 		text-align: center;
 		margin-bottom: 50px;
+	}
+
+	div.about .content {
+		display: grid;
+		justify-items: center;
+	}
+
+	div.about .text {
+		margin-right: 0;
+	}
+
+	div.about .content img {
+		margin-top: 50px;
+		width: 70%;
 	}
 }
 
