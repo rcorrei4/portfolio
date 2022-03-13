@@ -95,14 +95,38 @@ div.welcome img {
 }
 
 @media screen and (max-width: 600px) {
+	nav {
+		margin-top: 20px;
+	}
+
+	nav img {
+		margin-left: 30%;
+	}
+
+	div.welcome {
+		margin-top: 50px;
+	}
+
 	div.welcome .text {
-		justify-items: center;
+		text-align: left;
 		margin-right: 0;
-		width: 80%;
+		width: 85%;
+	}
+
+	div.welcome h1 {
+		font-size: 9.5vw;
+		width: 100%;
 	}
 
 	div.welcome a {
-		margin-right: 0;	}
+		padding: 15px 60px;
+		margin-top: 30px;
+		margin-right: auto;	
+	}
+
+	div.welcome p {
+		max-width: 100%;
+	}
 
 	div.welcome img {
 		display: none;
