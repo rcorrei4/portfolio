@@ -136,57 +136,34 @@ div.about .content img {
 }
 
 @media screen and (max-width: 768px) {
+	div.welcome .text {
+		margin-top: 50px;
+	}
+
 	nav .menu {
 		display: none;
 	}
 
-	nav .open-menu {
-		display: flex;
-		padding: 0;
-		position: absolute;
-		flex-direction: column;
-		height: 100%;
-		width: 100%;
-		top: 20%;
-		background-color: #000;
-	}
-
-	nav .open-menu li {
-		text-align: center;
-		margin-bottom: 50px;
-	}
-
-	div.about .content {
-		display: grid;
-		justify-items: center;
-	}
-
-	div.about .text {
-		margin-right: 0;
-	}
-
-	div.about .skills ul {
-		padding: 0;
-	}
-
-	div.about .content img {
-		margin-top: 50px;
-		width: 70%;
-	}
-}
-
-@media screen and (max-width: 600px) {
 	nav {
-		margin-top: 20px;
+		margin-top: 0px;
+		position: fixed;
+		width: 100%;
+		background: black;
+		top: 0;
+		transition: top 0.5s;
+	}
+
+	nav div {
+		margin-top: 15px;
+		background: black;
 	}
 
 	nav img {
 		margin-left: 30%;
 	}
 
-	.menu-btn {
-		margin-left: auto;
-		margin-right: 8%;
+	nav .menu-btn {
+		margin: 0 8% 0 auto;
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -200,6 +177,7 @@ div.about .content img {
 	}
 
 	div.menu-btn__burger {
+		margin-top: 0;
 		width: 25px;
 		height: 2px;
 		background: #B0B0B0;
@@ -241,6 +219,47 @@ div.about .content img {
 		transform: rotate(-45deg) translate(35px, 35px);
 		background: white;
 	}
+
+	nav .open-menu {
+		display: flex;
+		padding: 0;
+		position: fixed;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		top: 60px;
+		background-color: #000;
+	}
+
+	nav .menu li:first-child {
+		margin-top: 80px;
+	}
+
+	nav .open-menu li {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	div.about .content {
+		display: grid;
+		justify-items: center;
+	}
+
+	div.about .text {
+		margin-right: 0;
+	}
+
+	div.about .skills ul {
+		padding: 0;
+	}
+
+	div.about .content img {
+		margin-top: 50px;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 600px) {
 
 	div.welcome {
 		margin-top: 50px;
