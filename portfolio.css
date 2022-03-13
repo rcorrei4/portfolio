@@ -165,6 +165,10 @@ div.about .content img {
 		margin-right: 0;
 	}
 
+	div.about .skills ul {
+		padding: 0;
+	}
+
 	div.about .content img {
 		margin-top: 50px;
 		width: 70%;
@@ -265,5 +269,11 @@ div.about .content img {
 
 	div.welcome img {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	ul {
+		list-style-type: none;
 	}
 }
