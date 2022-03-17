@@ -409,6 +409,10 @@ div.footer-div #autor {
 	div.footer-div p {
 		padding: 0 40px;
 	}
+
+	div.redes-sociais {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 600px) {
