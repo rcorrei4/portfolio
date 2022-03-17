@@ -55,7 +55,38 @@ nav .menu-btn {
 	display: none;
 }
 
+div.sidebar {
+	position: fixed;
+	top: 25vh;
+	left: 65px;
+}
+
+div.sidebar ul {
+	list-style-type: none;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+div.sidebar li {
+	margin-bottom: 30px;
+}
+
+div.sidebar input[type="radio"] {
+    opacity: 0;
+}
+
+div.sidebar label {
+	margin-left: -20px;
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
+
+div.sidebar input[type="radio"]:checked + label {
+    color: white;
+}
+
 div.welcome {
+	padding-left: 160px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,7 +95,7 @@ div.welcome {
 div.welcome .text {
 	margin-right: -15%;
 	display: grid;
-	width: 50%;
+	width: 60%;
 }
 
 div.welcome h1 {
@@ -111,7 +142,8 @@ div.about h1 {
 }
 
 div.about .about-div {
-	width: 85%;
+	padding-left: 160px;
+	margin-right: 100px;
 	max-width: 1600px;
 }
 
@@ -131,13 +163,52 @@ div.about .skills {
 }
 
 div.about .content img {
-	width: 30%;
+	width: 25vw;
 	height: auto;
 }
 
 @media screen and (max-width: 768px) {
-	div.welcome .text {
+	div.sidebar {
+		display: none;
+	}
+
+	div.welcome {
 		margin-top: 50px;
+	}
+
+	div.welcome .text {
+		margin-top: 100px;
+		text-align: left;
+		margin-right: 0;
+		width: 85%;
+	}
+
+	div.welcome h1 {
+		font-size: 9.5vw;
+		width: 100%;
+	}
+
+	div.welcome a {
+		padding: 15px 60px;
+		margin-top: 30px;
+		margin-right: auto;	
+	}
+
+	div.welcome p {
+		max-width: 100%;
+	}
+
+	div.welcome img {
+		display: none;
+	}
+
+	div.welcome, div.about .about-div {
+		padding: 0;
+		margin: 0;
+	}
+
+	div.about .about-div {
+		width: 85%
 	}
 
 	nav .menu {
@@ -284,10 +355,6 @@ div.about .content img {
 
 	div.welcome p {
 		max-width: 100%;
-	}
-
-	div.welcome img {
-		display: none;
 	}
 }
 
