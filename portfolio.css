@@ -62,6 +62,7 @@ div.sidebar {
 }
 
 div.sidebar ul {
+	margin-left: 5px;
 	list-style-type: none;
 	margin-bottom: 40px;
 	padding: 0;
@@ -71,7 +72,25 @@ div.sidebar li {
 	margin-bottom: 30px;
 }
 
+div.sidebar li i {
+	color: #B0B0B0;
+	transition: color .5s;
+}
+
+div.sidebar li .bi-github:hover {
+	color: white;
+}
+
+div.sidebar li .bi-instagram:hover {
+	color: white;
+}
+
+div.sidebar li .bi-linkedin:hover {
+	color: white;
+}
+
 div.sidebar input[type="radio"] {
+	margin: 0;
     opacity: 0;
 }
 
@@ -165,6 +184,12 @@ div.about .skills {
 div.about .content img {
 	width: 25vw;
 	height: auto;
+	filter: saturate(0%);
+	animation: all .5s;
+}
+
+div.about .content img:hover {
+	filter: saturate(50%);
 }
 
 @media screen and (max-width: 768px) {
