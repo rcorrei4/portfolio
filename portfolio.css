@@ -192,6 +192,63 @@ div.about .content img:hover {
 	filter: saturate(50%);
 }
 
+div.projects {
+	width: 100%;
+	margin-top: 120px;
+	display: flex;
+	justify-content: center;
+}
+
+div.projects h1 {
+	color: white;
+}
+
+div.projects .projects-div {
+	padding-left: 160px;
+	margin-right: 100px;
+	max-width: 1600px;
+}
+
+div.projects-div .projeto {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+
+div.projects-div .projeto-2 {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+div.projects-div .imagem {
+	max-width: 450px;
+	width: 90%;
+	margin-right: 2vw;
+}
+
+div.projects-div .text {
+	margin-right: 2vw;
+}
+
+div.projects-div .projeto img {
+	width: 100%;
+	height: auto;
+}
+
+div.projects-div .outros {
+	display: flex;
+	margin-top: 100px;
+}
+
+div.projects-div .outro {
+	display: flex;
+	align-items: center;
+}
+
+div.projects-div .outro img {
+	width: 70%;
+}
+
 footer {
 	width: 100%;
 	margin-top: 120px;
@@ -404,6 +461,31 @@ div.footer-div #autor {
 	div.about .content img {
 		margin-top: 50px;
 		width: 70%;
+	}
+
+	div.projects .projects-div {
+		margin: 0;
+		margin-top: 50px;
+		padding: 0;
+		width: 85%;
+	}
+
+	div.projects-div .projeto {
+		display: grid;
+		justify-items: center;
+	}
+
+	div.projects-div .outros {
+		display: grid;
+		justify-items: center;
+	}
+
+	div.projects-div .outro {
+		display: grid;
+	}
+
+	div.projects-div .outros img {
+		display: none;
 	}
 
 	div.footer-div p {
