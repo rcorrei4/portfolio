@@ -19,6 +19,13 @@ function responsiveMenu () {
       menuOpen = false;
     }
   })
+
+  navBtns = menu.querySelectorAll('li')
+  navBtns.forEach((navBtn) => {
+    navBtn.onclick = () => {
+      menuBtn.click()
+    }
+  })
 }
 
 function navbar() {
