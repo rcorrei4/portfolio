@@ -192,6 +192,56 @@ div.about .content img:hover {
 	filter: saturate(50%);
 }
 
+footer {
+	width: 100%;
+	margin-top: 120px;
+	display: flex;
+	justify-content: left;
+}
+
+div.footer-div {
+	display: grid;
+	justify-items: center;
+	width: 100%;
+	max-width: 1600px;
+}
+
+div.footer-div h1 {
+	color: white;
+}
+
+div.footer-div p {
+	text-align: center;
+	padding: 0 30vw 0 30vw;
+}
+
+div.footer-div #email {
+	font-size: 18px;
+	color: white;
+}
+
+div.redes-sociais {
+	display: none;
+}
+
+div.footer-div a i {
+	color: #B0B0B0;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 24px;
+	transition: color .5s;
+}
+
+div.footer-div a i:hover {
+	color: white;
+}
+
+div.footer-div #autor {
+	margin-top: 90px;
+	margin-bottom: 50px;
+	font-size: 12px;
+}
+
 @media screen and (max-width: 768px) {
 	div.sidebar {
 		display: none;
@@ -241,8 +291,10 @@ div.about .content img:hover {
 	}
 
 	nav {
+		overflow: hidden;
 		margin-top: 0px;
 		position: fixed;
+		z-index: 2;
 		width: 100%;
 		background: black;
 		top: 0;
@@ -352,6 +404,10 @@ div.about .content img:hover {
 	div.about .content img {
 		margin-top: 50px;
 		width: 70%;
+	}
+
+	div.footer-div p {
+		padding: 0 40px;
 	}
 }
 
