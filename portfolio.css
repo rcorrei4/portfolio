@@ -190,7 +190,6 @@ div.about .content img {
 	width: 25vw;
 	height: auto;
 	filter: saturate(0%);
-	animation: all .5s;
 }
 
 div.about .content img:hover {
@@ -220,6 +219,28 @@ div.projects-div .projeto {
 	margin-top: 50px;
 }
 
+div.projects-div h2 {
+	margin-top: 0;
+}
+
+div.projects-div .projeto-btns {
+	margin-top: 30px;
+}
+
+div.projects-div .projeto-btns a {
+	color: #B0B0B0;
+	border: 2px solid #B0B0B0;
+	padding: 10px 20px;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+div.projects-div .projeto-btns a:hover {
+	color: black;
+	border-color: white;
+	background-color: white;
+}
+
 div.projects-div .projeto-2 {
 	display: flex;
 	flex-direction: row-reverse;
@@ -229,6 +250,7 @@ div.projects-div .imagem {
 	max-width: 450px;
 	width: 90%;
 	margin-right: 2vw;
+
 }
 
 div.projects-div .text {
@@ -238,14 +260,16 @@ div.projects-div .text {
 div.projects-div .projeto img {
 	width: 100%;
 	height: auto;
+	filter: saturate(0%);
 }
 
 div.projects-div .outros {
 	display: flex;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 div.projects-div .outro {
+	margin-top: 50px;
 	display: flex;
 	align-items: center;
 }
@@ -478,6 +502,12 @@ div.footer-div #autor {
 	div.projects-div .projeto {
 		display: grid;
 		justify-items: center;
+		margin-top: 100px;
+	}
+
+	div.projects-div .projeto-btns {
+		display: flex;
+		justify-content: space-evenly;
 	}
 
 	div.projects-div .outros {
