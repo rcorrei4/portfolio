@@ -3,7 +3,7 @@
 }
 
 body {
-	background-color: #000000;
+	background-color: #0a0a0a;
 	color: #B0B0B0;
 	padding: 0;
 	margin: 0;
@@ -63,6 +63,7 @@ div.sidebar {
 	position: fixed;
 	top: 25vh;
 	left: 65px;
+	transition: all .5s;
 }
 
 div.sidebar ul {
@@ -185,6 +186,20 @@ div.about .skills {
 	display: flex;
 	justify-content: space-around;
 }
+
+div.about .skills ul {
+	list-style: none;
+}
+
+div.about .skills ul li::before {
+  content: "\25BA";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+}
+
 
 div.about .content img {
 	width: 25vw;
@@ -382,14 +397,14 @@ div.footer-div #autor {
 		position: fixed;
 		z-index: 2;
 		width: 100%;
-		background: black;
+		background: #0a0a0a;
 		top: 0;
 		transition: top 0.5s;
 	}
 
 	nav div {
 		margin-top: 15px;
-		background: black;
+		background: #0a0a0a;
 	}
 
 	nav img {
@@ -462,7 +477,7 @@ div.footer-div #autor {
 		height: 100%;
 		width: 100%;
 		top: 60px;
-		background-color: #000;
+		background-color: #0a0a0a;
 	}
 
 	nav .menu li:first-child {

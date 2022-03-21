@@ -33,6 +33,12 @@ function navbar() {
   let menu = document.querySelector('.menu')
 
   window.onscroll = function() {
+    if (prevScrollpos > 25) {
+      document.querySelector('.sidebar').style.top = "20%";
+    } else {
+      document.querySelector('.sidebar').style.top = "25vh";
+    }
+
     if (menu.className == 'menu open-menu') {
     } else {
       var currentScrollPos = window.pageYOffset;
