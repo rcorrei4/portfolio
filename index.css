@@ -46,12 +46,12 @@ nav .menu a {
 	transition: all .5s;
 }
 
-nav .menu a:hover, nav .menu #curriculo:hover {
+nav .menu a:hover, nav .menu #resume-btn:hover {
 	color: white;
 	border-color: white;
 }
 
-nav .menu #curriculo {
+nav .menu #resume-btn {
 	border: 2px solid #B0B0B0;
 }
 

@@ -1,6 +1,30 @@
+enData = {
+  "about-btn": "About",
+  "projects-btn": "Projects",
+  "contact-btn": "Contact",
+  "resume-btn": "Resume",
+  "welcome": "Welcome, my name is",
+  "description": "Backend developer obsessed with artificial intelligence and a small dash of design",
+  "contact_me": "Contact me",
+  "about_title": "About",
+  "about_text": "Aspiring programmer with 2 years of experience in personal projects. Since I was always a child in contact with a computer since I learned the first one at 10 years old, I developed a facility to learn any subject related to computers and I decided to start programming in 2019 when I started the Integrated High School to Technician in Systems Development. I aim to be a person of great impact and influence in the field of artificial intelligence and machine learning.",
+  "projects_title": "Projects",
+  "ibdb_description": "Site where people can contribute information about books, inspired by IMDb.",
+  "libriumswap_description": "Capstone project that aimed to improve the circulation of books in Brazil through a website where people could sell, rent and exchange their books.",
+  "gupy_description": "Gupy applications in one place.",
+  "aliscript_description": "SLASH IT Promotion automation for Aliexpress.",
+  "bot_description": "Telegram bot to send Microsoft Teams activities to a telegram chat.",
+  "contact_title": "Contact me",
+  "contact_text": "Interested? Get in touch on any of my social networks or send me an email.",
+  "autor": "Designed and Built by Ricardo Santos",
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
   responsiveMenu()
   navbar()
+  getLanguage()
+  translate()
 })
 
 function responsiveMenu () {
@@ -50,4 +74,59 @@ function navbar() {
       prevScrollpos = currentScrollPos;
     }
   }
+}
+
+function getLanguage() {
+  lang = localStorage.getItem('language')
+
+  if (!lang) {
+    localStorage.setItem('language', 'pt')
+  } else {
+    if (lang == 'en') {
+      document.querySelector('#enus').checked = true
+      document.querySelector('#ptbr').checked = false
+
+      translateElement('about-btn')
+      translateElement('projects-btn')
+      translateElement('contact-btn')
+      translateElement('resume-btn')
+      translateElement('welcome')
+      translateElement('description')
+      translateElement('contact_me')
+      translateElement('about_title')
+      translateElement('about_text')
+      translateElement('projects_title')
+      translateElement('ibdb_description')
+      translateElement('libriumswap_description')
+      translateElement('gupy_description')
+      translateElement('aliscript_description')
+      translateElement('bot_description')
+      translateElement('contact_title')
+      translateElement('contact_text')
+      translateElement('autor')
+
+    } else if (lang == 'pt') {
+      document.querySelector('#enus').checked = false
+      document.querySelector('#ptbr').checked = true
+    }
+  }
+}
+
+function translate() {
+  enBtn = document.querySelector('#enus')
+  ptBtn = document.querySelector('#ptbr')
+
+  ptbr.onclick = () => {
+    localStorage.setItem('language', 'pt')
+    document.location.reload()
+  }
+
+  enBtn.onclick = () => {
+    localStorage.setItem('language', 'en')
+    document.location.reload()
+  }
+}
+
+function translateElement(elementId) {
+  document.querySelector(`#${elementId}`).innerText = enData[elementId]
 }

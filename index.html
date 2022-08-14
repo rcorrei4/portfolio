@@ -16,10 +16,10 @@
 		<div>
 			<a href="#"><img src="images/logo.png"></a>
 			<ul class="menu">
-				<li><a href="#about">Sobre</a></li>
-				<li><a href="#projects">Projetos</a></li>
-				<li><a href="#contact">Contato</a></li>
-				<li><a href="curriculo.pdf" id="curriculo" target="__blank">Currículo</a></li>
+				<li><a id="about-btn" href="#about">Sobre</a></li>
+				<li><a id="projects-btn" href="#projects">Projetos</a></li>
+				<li><a id="contact-btn" href="#contact">Contato</a></li>
+				<li><a id="resume-btn" href="curriculo.pdf" target="__blank">Currículo</a></li>
 			</ul>
 			<div class="menu-btn">
 				<div class="menu-btn__burger"></div>
@@ -47,19 +47,19 @@
 	</div>
 	<div class="welcome">
 		<div class="text">
-			<p>Bem vindo, me chamo</p>
+			<p id="welcome">Bem vindo, me chamo</p>
 			<h1>Ricardo Santos</h1>
-			<p>Desenvolvedor backend obcecado por inteligência artificial e uma pequena pitada de design</p>
-			<a href="#contact">Contate-me</a>
+			<p id="description">Desenvolvedor backend obcecado por inteligência artificial e uma pequena pitada de design</p>
+			<a id="contact_me" href="#contact">Contate-me</a>
 		</div>
 		<img src="images/eu_welcome.png">
 	</div>
 	<div class="about" id="about">
 		<div class="about-div">
-			<h1>Sobre mim</h1>
+			<h1 id="about_title">Sobre mim</h1>
 			<div class="content">
 				<div class="text">
-					<p>Aspirante a programador com 2 anos de experiência em projetos pessoais. Desde criança sempre tive contato com um computador desde que ganhei o primeiro aos 10 anos, desenvolvi uma facilidade de aprender qualquer assunto relacionado a computadores e decidi começar a programar em 2019 ao iniciar o Ensino Médio integrado ao Técnico em Desenvolvimento de Sistemas. Almejo ser uma pessoa de grande impacto e influência na área de inteligência artificial e aprendizado de máquina.</p>
+					<p id="about_text">Aspirante a programador com 2 anos de experiência em projetos pessoais. Desde criança sempre tive contato com um computador desde que ganhei o primeiro aos 10 anos, desenvolvi uma facilidade de aprender qualquer assunto relacionado a computadores e decidi começar a programar em 2019 ao iniciar o Ensino Médio integrado ao Técnico em Desenvolvimento de Sistemas. Almejo ser uma pessoa de grande impacto e influência na área de inteligência artificial e aprendizado de máquina.</p>
 					<div class="skills">
 						<ul>
 							<li>Python</li>
@@ -84,7 +84,7 @@
 	</div>
 	<div class="projects" id="projects">
 		<div class="projects-div">
-			<h1>Projetos</h1>
+			<h1 id="projects_title">Projetos</h1>
 			<div class="content">
 				<div class="projeto">
 					<div class="imagem">
@@ -92,7 +92,7 @@
 					</div>
 					<div class="text">
 						<h2>IBDb (Internet Book Database)</h2>
-						<p>Website onde as pessoas podem contribuir com informações sobre livros, inspirado no IMBDb.</p>
+						<p id="ibdb_description">Website onde as pessoas podem contribuir com informações sobre livros, inspirado no IMBDb.</p>
 						<p>Django  Javascript  SQLite  HTML  CSS </p>
 						<div class="projeto-btns">
 							<a href="http://ibdb-project.herokuapp.com/" target="__blank"><i class="bi bi-play-circle-fill"></i> Demo</a>
@@ -106,7 +106,7 @@
 					</div>
 					<div class="text">
 						<h2>LibriumSwap</h2>
-						<p>Projeto de TCC que tinha como objetivo melhorar a circulação de livros pelo Brasil através de um website onde as pessoas poderiam vender, alugar e trocar seus livros.</p>
+						<p id="libriumswap_description">Projeto de TCC que tinha como objetivo melhorar a circulação de livros pelo Brasil através de um website onde as pessoas poderiam vender, alugar e trocar seus livros.</p>
 						<p>Django  Javascript  SQLite  HTML  CSS  Docker</p>
 						<div class="projeto-btns">
 							<a href="https://libriumswap.herokuapp.com/" target="__blank"><i class="bi bi-play-circle-fill"></i> Demo</a>
@@ -120,7 +120,7 @@
 					</div>
 					<div class="text">
 						<h2>Painel Gupy</h2>
-						<p>Candidaturas do Gupy em um só lugar.</p>
+						<p id="gupy_description">Candidaturas do Gupy em um só lugar.</p>
 						<p>Django  Javascript  HTML  CSS</p>
 						<div class="projeto-btns">
 							<a href="#" target="__blank"><i class="bi bi-play-circle-fill"></i> Demo</a>
@@ -135,7 +135,7 @@
 						</div>
 						<div class="text">
 							<h2>Aliscript</h2>
-							<p>Automatização da promoção pechincha do Aliexpress</p>
+							<p id="aliscript_description">Automatização da promoção pechincha do Aliexpress</p>
 							<p>Python  Selenium</p>
 							<div class="projeto-btns">
 							<a href="https://github.com/rcorrei4/aliscript" target="__blank"><i class="bi bi-github"></i> Github</a>
@@ -148,7 +148,7 @@
 						</div>
 						<div class="text">
 							<h2>Bot Assignments</h2>
-							<p>Bot do telegram para enviar atividades do Microsoft Teams para um chat do telegram</p>
+							<p id="bot_description">Bot do telegram para enviar atividades do Microsoft Teams para um chat do telegram</p>
 							<p>Python</p>
 							<div class="projeto-btns">
 							<a href="https://github.com/rcorrei4/bot-assignments" target="__blank"><i class="bi bi-github"></i> Github</a>
@@ -161,8 +161,8 @@
 	</div>
 	<footer>
 		<div class="footer-div" id="contact">
-			<h1>Entre em contato</h1>
-			<p>Ficou interessado? Entre em contato em qualquer uma das minhas redes sociais ou mande um email.</p>
+			<h1 id="contact_title">Entre em contato</h1>
+			<p id="contact_text">Ficou interessado? Entre em contato em qualquer uma das minhas redes sociais ou mande um email.</p>
 			<p id="email">ricardo.csantos0877@gmail.com</p>
 			<div class="redes-sociais">
 				<a href="https://github.com/rcorrei4" target="__blank"><i class="bi bi-github"></i></a>
