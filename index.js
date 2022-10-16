@@ -105,6 +105,8 @@ function getLanguage() {
       translateElement('contact_text')
       translateElement('autor')
 
+      document.querySelector('#resume-btn').setAttribute('href', 'english.pdf')
+
     } else if (lang == 'pt') {
       document.querySelector('#enus').checked = false
       document.querySelector('#ptbr').checked = true
