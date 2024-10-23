@@ -86,15 +86,12 @@ function getLanguage() {
       document.querySelector('#enus').checked = true
       document.querySelector('#ptbr').checked = false
 
-      translateElement('about-btn')
       translateElement('projects-btn')
       translateElement('contact-btn')
       translateElement('resume-btn')
       translateElement('welcome')
       translateElement('description')
       translateElement('contact_me')
-      translateElement('about_title')
-      translateElement('about_text')
       translateElement('projects_title')
       translateElement('ibdb_description')
       translateElement('libriumswap_description')
